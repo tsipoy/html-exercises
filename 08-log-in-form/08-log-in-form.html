@@ -18,9 +18,24 @@
         <h2>Log in</h2>
         <p>Please log in before accessing our website</p>
       </header>
+      <form action="/log-in" methode="POST">
+        <p>
+          <label for="username_email"><b>E-mail address</b></label>
+        </p>
+          <input type="text" id="username_email" name="username" required>
+        <p>
+          <label for="password"><b>Password</b></label>
+        </p>
+          <input type="password" id="password" name="password" required>
+        <p>
+          <button type="submit">Log in</button>
+        </p>
+          <input type="checkbox">
+        <p>
+          <button type="button" class="cancelbutton">Cancel</button>
+        </p>
 
       <!-- Add your log in form here -->
-
     </main>
   </body>
 </html>
