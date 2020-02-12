@@ -48,7 +48,7 @@
         </fieldset>
         <fieldset>
           <legend>Website</legend>
-            <input type="emailto" id="URL" name=" website" required>
+            <input type="email" id="URL" name=" website" required>
           <!-- The server is expecting the user's `website` address here. -->
         </fieldset>
         <fieldset>
@@ -114,13 +114,11 @@
         </header>
         <fieldset>
           <legend>Small list of values</legend>
-            <select type="radio" name="fruit" multiple>
-              <ul>
-                <li><option value="apples" name="apples">Apples</li>
-                <li><option value="bananas" name="bananas">Bananas</li>
-                <li><option value="grapes" name="grapes">Grapes</li>
-                <li><option value="plums" name="plums">Plums</li>
-              </ul>
+            <select multiple>
+              <option value="apples">Apples
+              <option value="bananas">Bananas
+              <option value="grapes">Grapes
+              <option value="plums">Plums
             </select>
           <!--
             The server is expecting one or more of the following values for `fruit`:
@@ -133,17 +131,15 @@
         </fieldset>
         <fieldset>
           <legend>Large list of values</legend>
-            <select type="radio" name="birds" multiple>
-              <ul>
-                <li><option value="duck" name="duck">Duck</li>
-                <li><option value="eagle" name="eagle">Eagles</li>
-                <li><option value="heron" name="heron">Herons</li>
-                <li><option value="gull" name="gull">Gulls</li>
-                <li><option value="pigeon" name="pigeon">Pigeons</li>
-                <li><option value="raven" name="raven">Ravens</li>
-                <li><option value="robin" name="robin">Robins</li>
-                <li><option value="swallow" name="swallow">Swallows</li>
-              </ul>
+            <select  multiple>
+              <option value="duck">Duck
+              <option value="eagle">Eagles
+              <option value="heron">Herons
+              <option value="gull">Gulls
+              <option value="pigeon">Pigeons
+              <option value="raven">Ravens
+              <option value="robin">Robins
+              <option value="swallow">Swallows
             </select>
           <!--
             The server is expecting one or more of the following values for `birds`:
@@ -169,7 +165,7 @@
         </header>
         <fieldset>
           <legend>Hidden</legend>
-          <input type="hidden" id="form_other" name="form_other" value="true">
+          <input type="hidden" name="form_other" value="true">
           <!--
             The server is expecting a hidden `signed=true` pair here.
           -->
@@ -192,10 +188,10 @@
         </fieldset>
         <fieldset>
           <legend>Colour</legend>
-            <label for="colour">Select your background_colour:</label>
-              <input type="color" id="colour" name="colour">
+            <label for="color">Select your background_color:</label>
+              <input type="color" id="color" name="color">
           <!--
-            The server is expecting at a colour value for `background_colour`
+            The server is expecting at a color value for `background_color`
           -->
         </fieldset>
         <div>
@@ -205,4 +201,3 @@
     </main>
   </body>
 </html>
-
