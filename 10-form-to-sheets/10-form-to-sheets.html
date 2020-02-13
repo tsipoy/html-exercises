@@ -13,52 +13,54 @@
       <fieldset>
         <legend>contributor</legend>
           <p>
-            <input type="text" name="contributor" value="natacha">
+            <input type="hidden" name="contributor" value="natacha">
           </p>
       </fieldset>
       <fieldset>
-        <legend>artist_name</legend>
+        <legend>artist's name</legend>
           <p>
-            <input type="text" name="artist_name" value="tsarahita" required>
+            <input type="text" name="artist_name" required>
           </p>
+            <small>Please use the artist's name as lowercase letters, and replace spaces with dashes or underscores<small>
       </fieldset>
       <fieldset>
-        <legend>artist_id</legend>
+        <legend>artist's ID</legend>
           <p>
-            <input type="text" name="artist_id" value="tsarahita" required>
+            <input type="text" name="artist_id" required>
           </p>
       </fieldset>
       <fieldset>
         <legend>genre</legend>
           <select name="genre">
-            <optgroup label="Malagasy Genre"</optgroup>
+            <optgroup label="Malagasy Genre">
               <option value="salegy">Salegy</option>
               <option value="tsapiky">Tsapiky</option>
             </optgroup>
-            <optgroup label="International Genre"</optgroup>
+            <optgroup label="International Genre">
               <option value="rock">Rock</option>
               <option value="rnb">Rnb</option>
             </optgroup>
           </select>
       </fieldset>
       <fieldset>
-        <legend>photo_url</legend>
+        <legend>photo url</legend>
           <p>
-            <input type="URl" name="photo_url" value="https://www.google.com/search?q=tsarahita&source=lnms&tbm=isch&sa=X&ved=2ahUKEwi7kru8isznAhV95-AKHUz5CzAQ_AUoAXoECAcQAw&biw=1366&bih=625" required>
+            <input type="URl" name="photo_url" required>
           </p>
+            <small>Right click on image, and copy the image web address</small>
       </fieldset>
       <fieldset>
         <legend>Biography</legend>
           <p>
-      <textarea rows="5" cols="30" name="biography" required>
-Sorry, I couldn't find any informarion for this artist
-      </textarea>
+            <textarea rows="5" cols="30" name="biography" required></textarea>
           </p>
       </fieldset>
       <fieldset>
+        <legend>website</legend>
         <p>
-          <input type="URL" name="website" value="https://web.facebook.com/pages/category/Music-Video/Tsarahita-322418984867221/?_rdc=1&_rdr">
+          <input type="URL" name="website" required>
         </p>
+          <small>Does this artist has e homepage, if so, list it here</small>
       </fieldset>
 
       <!--
