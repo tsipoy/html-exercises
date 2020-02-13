@@ -31,13 +31,13 @@
         </header>
         <fieldset>
           <legend>Simple text: Nickname</legend>
-            <input type="text" id="nickname" name="nickname" required>
+            <input type="text" id="nickname"  required>
           <!-- The server is expecting plain text here with the `name` of `nickname`. Linebreaks aren't allowed. -->
         </fieldset>
         <fieldset>
           <legend>Multi-line Text: Biography</legend>
             <p>
-        <textarea rows="1" cols="35" name="biography" required></textarea>
+              <textarea rows="1" cols="35" name="biography" required></textarea>
             </p>
           <!-- The server is expecting paragraphs of text here to act as the `biography` field. Linebreaks need to be saved. -->
         </fieldset>
@@ -53,12 +53,12 @@
         </fieldset>
         <fieldset>
           <legend>Date of birth</legend>
-            <input type="date" id="date_of_birth" name="date_of_birth" required>
+            <input type="search" id="date_of_birth"  required>
           <!-- The server is expecting the user's `date_of_birth` here. -->
         </fieldset>
         <fieldset>
           <legend>Age</legend>
-          <input type="date" id="age" name="age" required>
+          <input type="number" id="age" name="age" required>
           <!-- The server is expecting the user's `age` in years here. -->
         </fieldset>
         <div>
@@ -114,11 +114,61 @@
         </header>
         <fieldset>
           <legend>Small list of values</legend>
+            <select name="fruit">
+              <option value="apples">Apples</option>
+              <option value="bananas">Bananas</option>
+              <option value="grapes">Grapes</option>
+              <option value="plums">Plums</option>
+            </select>
+          <!--
+            The server is expecting one of the following values for `fruit`:
+
+              - `apples`: Apples
+              - `bananas`: Bananas
+              - `grapes`: Grapes
+              - `plums`: Plums
+          -->
+        </fieldset>
+        <fieldset>
+          <legend>Large list of values</legend>
+            <select name="fruit" id="fruit">
+              <option value="duck">Duck</option>
+              <option value="eagle">Eagles</option>
+              <option value="heron">Herons</option>
+              <option value="gull">Gulls</option>
+              <option value="pigeon">Pigeons</option>
+              <option value="raven">Ravens</option>
+              <option value="robin">Robins</option>
+              <option value="swallow">Swallows</option>
+            </select>
+          <!--
+            The server is expecting one of the following values for `birds`:
+
+              - `duck`: Ducks
+              - `eagle`: Eagles
+              - `heron`: Herons
+              - `gull`: Gulls
+              - `pigeon`: Pigeons
+              - `raven`: Ravens
+              - `robin`: Robins
+              - `swallow`: Swallows
+          -->
+        </fieldset>
+        <div>
+          <button type="submit" name="form" value="single">Send</button>
+        </div>
+      </form>
+      <form action="#form_single" method="GET" id="multiple_single">
+        <header>
+          <h2>Multiple choice from a set of options</h2>
+        </header>
+        <fieldset>
+          <legend>Small list of values</legend>
             <select multiple>
-              <option value="apples">Apples
-              <option value="bananas">Bananas
-              <option value="grapes">Grapes
-              <option value="plums">Plums
+              <option value="apples">Apples</option>
+              <option value="bananas">Bananas</option>
+              <option value="grapes">Grapes</option>
+              <option value="plums">Plums</option>
             </select>
           <!--
             The server is expecting one or more of the following values for `fruit`:
@@ -131,15 +181,15 @@
         </fieldset>
         <fieldset>
           <legend>Large list of values</legend>
-            <select  multiple>
-              <option value="duck">Duck
-              <option value="eagle">Eagles
-              <option value="heron">Herons
-              <option value="gull">Gulls
-              <option value="pigeon">Pigeons
-              <option value="raven">Ravens
-              <option value="robin">Robins
-              <option value="swallow">Swallows
+            <select multiple>
+              <option value="duck">Duck</option>
+              <option value="eagle">Eagles</option>
+              <option value="heron">Herons</option>
+              <option value="gull">Gulls</option>
+              <option value="pigeon">Pigeons</option>
+              <option value="raven">Ravens</option>
+              <option value="robin">Robins</option>
+              <option value="swallow">Swallows</option>
             </select>
           <!--
             The server is expecting one or more of the following values for `birds`:
@@ -165,7 +215,7 @@
         </header>
         <fieldset>
           <legend>Hidden</legend>
-          <input type="hidden" name="form_other" value="true">
+          <input type="hidden" name="signed" value="true">
           <!--
             The server is expecting a hidden `signed=true` pair here.
           -->
@@ -189,7 +239,7 @@
         <fieldset>
           <legend>Colour</legend>
             <label for="color">Select your background_color:</label>
-              <input type="color" id="color" name="color">
+              <input type="color" id="color" name="background_color">
           <!--
             The server is expecting at a color value for `background_color`
           -->
