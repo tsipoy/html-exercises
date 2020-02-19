@@ -17,6 +17,12 @@
 
       <section>
         <h2>A menu of a list of links</h2>
+          <ul>
+            <li><a href="https://dndbeyond.com">Home</a></li>
+            <li><a href="https://dndbeyond.com">Our services</a></li>
+            <li><a href="https://dndbeyond.com">About us</a></li>
+            <li><a href="https://dndbeyond.com">Contact us</a></li>
+          </ul>
         <!--
           1. Create a list of links to form a navigational element. The links are:
             - "Home" links to "/"
@@ -28,6 +34,38 @@
 
       <section>
         <h2>A profile update form</h2>
+          <fieldset>
+            <legend>First name</legend>
+              <input type="text" id="profile_first_name" required>
+          </fieldset>
+          <fieldset>
+            <legend>Family name</legend>
+              <input type="text" id="profile_family_name" required>
+          </fieldset>
+          <fieldset>
+            <legend>Email</legend>
+              <input type="email" id="username" required>
+          </fieldset>
+          <fieldset>
+            <legend>Phone number</legend>
+              <input type="tel" id="number">
+          </fieldset>
+          <fieldset>
+            <legend>Gender</legend>
+              <input type="checkbox" name="gender" value="Male" required>m
+              <input type="checkbox" name="gender" value="female" required>f
+              <input type="checkbox" name="gender" value="prefer_not_to_disclose" required>na
+                <p>
+                  <small><u>Note</u>:"m" means male, "f" means female and if you prefer not to disclose, click the checkbox "na".</small>
+                </p>
+          </fieldset>
+          <fieldset>
+            <legend>Profile photo</legend>
+              <input type="url" id="profile_photo">
+                <p>
+                  <small>We only accept PNGs, JPGs, and WebP formats.</small>
+          </fieldset>
+
         <!--
           2. Build a form that posts to "/profile/save". In this form we want the user to be able to update their profile, the form needs the following…
 
@@ -45,6 +83,13 @@
 
       <section>
         <h2>An excerpt</h2>
+          <p>
+            This excerpt is from a short story called <b>The story of your life</b> by <i>Ted Chiang</i>.
+          </p>
+            <q><em>The only reason you had me was so you could get a maid you wouldn't have to pay</em></q>, you'll say bitterly,<q>dragging the vacuum cleaner out of the closet.</q><br>
+            <q><em>That's right!</em></q> I'll say. <q><em>Thirteen years ago I knew the carpets would need vacuuming around now, and having a baby seemed to be the cheapest and easiest way to get the job done. Now kindly get on with it.</em></q><br>
+            <q><em>If you weren't my mother, this would be illegal</em></q>, you'll say, <q>seething as you unwind the power cord and plug it into the wall outlet.</q><br>
+
         <!--
           3. This excerpt is from a short story called "The story of your life" by "Ted Chiang". Supply the attribution to the author and their title, then mark-up the following excerpt correctly:
 
@@ -58,6 +103,35 @@
 
       <section>
         <h2>A table</h2>
+          <table style="width:50%">
+            <tr>
+              <th scope="col" id="header_name">Name</th>
+              <th scope="col" id="header_age">Age</th>
+              <th scope="col" id="header_weight">Weight</th>
+              <th scope="col" id="header_height">Height</th>
+            </tr>
+
+            <tr>
+              <th scope="row" id="row_fred">Fred</th>
+              <td headers="row_fred ">23</td>
+              <td headers="row_fred">74kg</td>
+              <td headers="row_fred">182cm</td>
+            </tr>
+
+            <tr>
+              <th scope="row" id="row_anne">Anne</th>
+              <td headers="row_anne">26</td>
+              <td headers="row_anne">56kg</td>
+              <td headers="row_anne">173cm</td>
+            </tr>
+
+            <tr>
+              <th scope="row" id="row_judith">Judith</th>
+              <td headers="row_judith ">19</td>
+              <td headers="row_judith">51kg</td>
+              <td headers="row_judith">168cm</td>
+            </tr>
+          </table>
         <!--
           4. We need a table, with the following column headers:
 
@@ -78,6 +152,7 @@
 
       <section>
         <h2>Search results</h2>
+
         <!--
           5. Create a search results page in this folder and link to it from here.
 
@@ -114,6 +189,29 @@
       </section>
       <section>
         <h2>A definition</h2>
+          <p>
+            markup
+          </p>
+          <p>
+            /ˈmɑːkʌp/
+          </p>
+          <p>
+            <i>noun</i>
+          </p>
+          <p>
+            noun: <u>markup</u>; plural noun: <u>markups</u>; noun:<u> mark-up</u>; plural noun: <u>mark-ups</u>
+          </p>
+          <p>
+            <strong>1. amount added to the cost price of goods to cover overheads and profit</strong> "a markup of 50 per cent"
+          </p>
+          <p>
+            <strong>2.the process or result of correcting text in preparation for printing</strong>.
+          </p>
+          <p>
+            3.<kbd>COMPUTING</kbd><br>
+            <strong>a set of tags assigned to elements of a text to indicate their relation to the rest of the text or dictate how they should be displayed.</strong>"markup languages"
+          </p>
+
         <!--
           6. Create the HTML necessary for the image `markup.png` in this folder.
           It is a definition of the word 'Markup'.
